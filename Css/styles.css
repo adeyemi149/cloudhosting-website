@@ -7,6 +7,12 @@
   --color-body: #918ca4;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /*Typography*/
 html {
   font-size: 62.5%;
@@ -98,7 +104,7 @@ a {
 }
 
 .badge--small {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .badge--primary {
@@ -112,59 +118,125 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-    .badges {
-        font-size: 1.5rem;
-    }
+  .badges {
+    font-size: 1.5rem;
+  }
 
-    .badge--small {
-        font-size: 1.2rem;
-    }
+  .badge--small {
+    font-size: 1.2rem;
+  }
 }
 
-/*Lists*/ 
+/*Lists*/
 .list {
-    list-style-type: none;
-    padding-left: 0;
-    color: var(--color-headings);
+  list-style-type: none;
+  padding-left: 0;
+  color: var(--color-headings);
 }
 
 .list--inline .list__item {
-    display: inline-block;
-    margin-right: 2rem;
+  display: inline-block;
+  margin-right: 2rem;
 }
 
 .list--tick {
-    list-style-image: url(/images/tick.svg);
-    padding-left: 3rem;
+  list-style-image: url(/images/tick.svg);
+  padding-left: 3rem;
 }
 
 .list--tick .list__item {
-    padding-left: 0.5rem;
-    margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
-    .list--tick .list__item {
-        padding-left: 0;
-    }
+  .list--tick .list__item {
+    padding-left: 0;
+  }
 }
 
 /*Icons*/
 .icon {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .icon-primary {
-    fill: var(--color-primary);
+  fill: var(--color-primary);
 }
 
 .icon-container {
-    width: 64px;
-    height: 64px;
-    border-radius: 100%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f9fa;
 }
+
+/*Buttons*/
+.btn {
+  border-radius: 50px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1rem 0;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn--primary:hover {
+  background: #3a8ffd;
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #00c8eb;
+  color: white;
+}
+
+.btn--accent {
+  background: var(--color-accent);
+  color: white;
+}
+
+.btn--accent:hover {
+  background: #ff0000;
+}
+
+.btn--outline {
+  background: white;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+
+.btn--outline:hover {
+  background: var(--color-headings);
+  color: white
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+

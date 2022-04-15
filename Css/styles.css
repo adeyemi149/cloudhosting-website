@@ -33,6 +33,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -568,6 +569,7 @@ a {
   max-height: 100vh;
   opacity: 1;
 }
+
 /*Block*/
 .block {
   --padding-vertical: 5rem;
@@ -603,7 +605,7 @@ a {
 
 .container {
   width: 1140px;
-  margin: 0 auto;
+  margin: 0  auto;
 }
 
 /*Navigation Bar*/
@@ -637,7 +639,7 @@ a {
 
 .nav__toggler {
   opacity: 0.5;
-  transition: box-shadow .15s;
+  transition: box-shadow 0.15s;
   cursor: pointer;
 }
 
@@ -666,5 +668,33 @@ a {
 
   .nav__item {
     border: 0;
+  }
+}
+
+/* Hero */
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }

@@ -1,13 +1,13 @@
 /*Color pallete*/
 :root {
-  --color-secondary: #00d9ff;
-  --color-primary: #2584ff;
-  --color-headings: #1b0760;
-  --color-borders: #ccc;
-  --color-body: #918ca4;
-  --color-body-darker: #5c5577;
-  --color-accent: #ff3400;
   --border-radius: 30px;
+  --color-accent: #ff3400;
+  --color-body-darker: #5c5577;
+  --color-body: #918ca4;
+  --color-borders: #ccc;
+  --color-headings: #1b0760;
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
 }
 
 *,
@@ -348,6 +348,7 @@ a {
   font-size: 2rem;
   font-weight: 100;
   letter-spacing: 1px;
+  display: block;
 }
 
 .plan .list__item {
@@ -471,6 +472,7 @@ a {
 /*Testimonials*/
 .testimonial {
   padding: 3rem;
+  flex-wrap: wrap;
 }
 
 .testimonial__image {
